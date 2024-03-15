@@ -28,9 +28,9 @@ def run_text_analysis(text: str) -> dict:
         dict: A dictionary containing the analysis result.
     """
 
-    # Check if the input text has fewer than 20 words
-    if len(text.split(" ")) < 20:
-        return gr.Warning("The text should be at least 20 words long.")
+    # Check if the input text has fewer than 1 words
+    if len(text.split(" ")) < 1:
+        return gr.Warning("The text should be at least 1 words long.")
 
     analysis_result = {}
 
